@@ -19,6 +19,11 @@
 
         docker_28
         docker-compose
+
+        gcc
+        gnumake
+
+        openssl
       ];
 
       env = {

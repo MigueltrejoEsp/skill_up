@@ -63,6 +63,14 @@ config :skill_up, SkillUpWeb.Endpoint,
     ]
   ]
 
+config :esbuild,
+  path: System.get_env("ESBUILD_PATH"),
+  version: System.get_env("ESBUILD_VERSION")
+
+config :tailwind,
+  path: System.get_env("TAILWINDCSS_PATH"),
+  version: System.get_env("TAILWINDCSS_VERSION")
+
 # Enable dev routes for dashboard and mailbox
 config :skill_up, dev_routes: true
 
