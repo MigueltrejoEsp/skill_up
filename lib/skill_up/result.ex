@@ -5,11 +5,11 @@ defmodule SkillUp.Result do
   schema "results" do
     field :complete, :boolean, default: false
     field :passed, :boolean, default: false
-    field :user_id, :id
     field :score, :integer
 
     belongs_to :class, SkillUp.Class
     belongs_to :question, SkillUp.Question
+    belongs_to :user, SkillUp.Accounts.User
 
     timestamps(type: :utc_datetime)
   end

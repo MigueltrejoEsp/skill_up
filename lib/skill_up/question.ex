@@ -9,7 +9,7 @@ defmodule SkillUp.Question do
     field :c, :string
     field :d, :string
     field :e, :string
-    has_many :results, SkillUp.Result
+    field :correct, :boolean
     belongs_to :class, SkillUp.Class
 
     timestamps(type: :utc_datetime)

@@ -9,6 +9,7 @@ defmodule SkillUp.Repo.Migrations.CreateQuestions do
       add :c, :string
       add :d, :string
       add :e, :string
+      add :correct, :boolean
       add :class_id, references(:classes)
 
       timestamps(type: :utc_datetime)
